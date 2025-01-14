@@ -56,6 +56,9 @@
 		6F331A9D2D369DF80014C1F6 /* bicredit */ = {
 			isa = PBXGroup;
 			children = (
+				6F331AB22D369EC00014C1F6 /* Model */,
+				6F331AB32D369EC90014C1F6 /* View */,
+				6F331AB42D369ED70014C1F6 /* Controller */,
 				6F331A9E2D369DF80014C1F6 /* AppDelegate.swift */,
 				6F331AA02D369DF80014C1F6 /* SceneDelegate.swift */,
 				6F331AA22D369DF80014C1F6 /* ViewController.swift */,
@@ -65,6 +68,27 @@
 				6F331AAC2D369DFF0014C1F6 /* Info.plist */,
 			);
 			path = bicredit;
+			sourceTree = "<group>";
+		};
+		6F331AB22D369EC00014C1F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F331AB32D369EC90014C1F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F331AB42D369ED70014C1F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
