@@ -13,6 +13,11 @@
 		6F331AA62D369DF80014C1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F331AA42D369DF80014C1F6 /* Main.storyboard */; };
 		6F331AA82D369DFF0014C1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F331AA72D369DFF0014C1F6 /* Assets.xcassets */; };
 		6F331AAB2D369DFF0014C1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F331AA92D369DFF0014C1F6 /* LaunchScreen.storyboard */; };
+		6F7DDEE52D84ABAF00F2107D /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 6F7DDEE42D84ABAF00F2107D /* web3swift */; };
+		6F7DDEE82D84AD1B00F2107D /* WalletConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 6F7DDEE72D84AD1B00F2107D /* WalletConnect */; };
+		6F7DDEEA2D84AD1B00F2107D /* WalletConnectAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6F7DDEE92D84AD1B00F2107D /* WalletConnectAuth */; };
+		6F7DDEEC2D84AD1B00F2107D /* WalletConnectPairing in Frameworks */ = {isa = PBXBuildFile; productRef = 6F7DDEEB2D84AD1B00F2107D /* WalletConnectPairing */; };
+		6F7DDEEE2D84AD1B00F2107D /* Web3Wallet in Frameworks */ = {isa = PBXBuildFile; productRef = 6F7DDEED2D84AD1B00F2107D /* Web3Wallet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F7DDEE82D84AD1B00F2107D /* WalletConnect in Frameworks */,
+				6F7DDEEC2D84AD1B00F2107D /* WalletConnectPairing in Frameworks */,
+				6F7DDEEE2D84AD1B00F2107D /* Web3Wallet in Frameworks */,
+				6F7DDEE52D84ABAF00F2107D /* web3swift in Frameworks */,
+				6F7DDEEA2D84AD1B00F2107D /* WalletConnectAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +117,13 @@
 			dependencies = (
 			);
 			name = bicredit;
+			packageProductDependencies = (
+				6F7DDEE42D84ABAF00F2107D /* web3swift */,
+				6F7DDEE72D84AD1B00F2107D /* WalletConnect */,
+				6F7DDEE92D84AD1B00F2107D /* WalletConnectAuth */,
+				6F7DDEEB2D84AD1B00F2107D /* WalletConnectPairing */,
+				6F7DDEED2D84AD1B00F2107D /* Web3Wallet */,
+			);
 			productName = bicredit;
 			productReference = 6F331A9B2D369DF80014C1F6 /* bicredit.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +152,10 @@
 				Base,
 			);
 			mainGroup = 6F331A922D369DF80014C1F6;
+			packageReferences = (
+				6F7DDEE32D84ABAF00F2107D /* XCRemoteSwiftPackageReference "web3swift" */,
+				6F7DDEE62D84AD1B00F2107D /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */,
+			);
 			productRefGroup = 6F331A9C2D369DF80014C1F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -382,6 +403,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F7DDEE32D84ABAF00F2107D /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/skywinder/web3swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		6F7DDEE62D84AD1B00F2107D /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WalletConnect/WalletConnectSwiftV2";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F7DDEE42D84ABAF00F2107D /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F7DDEE32D84ABAF00F2107D /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+		6F7DDEE72D84AD1B00F2107D /* WalletConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F7DDEE62D84AD1B00F2107D /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnect;
+		};
+		6F7DDEE92D84AD1B00F2107D /* WalletConnectAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F7DDEE62D84AD1B00F2107D /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectAuth;
+		};
+		6F7DDEEB2D84AD1B00F2107D /* WalletConnectPairing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F7DDEE62D84AD1B00F2107D /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectPairing;
+		};
+		6F7DDEED2D84AD1B00F2107D /* Web3Wallet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F7DDEE62D84AD1B00F2107D /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = Web3Wallet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F331A932D369DF80014C1F6 /* Project object */;
 }

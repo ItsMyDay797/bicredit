@@ -11,8 +11,8 @@ require("dotenv").config();
 module.exports = {
     solidity: "0.8.20",
     networks: {
-        goerli: {
-            url: `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`,
+        sepolia: {
+            url: `https://sepolia.infura.io/v3/391a0680ed984e7c9418d0a0945e587f`,
             accounts: [process.env.PRIVATE_KEY]
         }
     }
