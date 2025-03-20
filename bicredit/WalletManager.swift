@@ -1,15 +1,19 @@
-import WalletConnectSign
-import WalletConnectRelay
+import ReownAppKit
 
-class WalletManager: ObservableObject {
-    private var client: WalletConnectClient
+class WalletManager {
+    private let client: WalletConnectClient
 
     init() {
         client = WalletConnectClient()
-        client.connect()
     }
 
     func connectWallet() {
-        client.connect()
+        client.pair { uri, error in
+            if let uri = uri {
+                print("Подключите кошелек, используя этот URI: \(uri)")
+            } else if let error = error {
+                print("Ошибка подключения: \(error.localizedDescription)")
+            }
+        }
     }
 }
