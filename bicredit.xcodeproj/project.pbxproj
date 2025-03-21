@@ -10,6 +10,14 @@
 		6F331A9F2D369DF80014C1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F331A9E2D369DF80014C1F6 /* AppDelegate.swift */; };
 		6F331AA12D369DF80014C1F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F331AA02D369DF80014C1F6 /* SceneDelegate.swift */; };
 		6F331AA32D369DF80014C1F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F331AA22D369DF80014C1F6 /* ViewController.swift */; };
+		6F4BDBEB2D8DFCBD00F029CB /* ReownAppKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4BDBEA2D8DFCBD00F029CB /* ReownAppKit */; };
+		6F4BDBED2D8DFCBD00F029CB /* ReownAppKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4BDBEC2D8DFCBD00F029CB /* ReownAppKitUI */; };
+		6F4BDBEF2D8DFCBD00F029CB /* ReownRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4BDBEE2D8DFCBD00F029CB /* ReownRouter */; };
+		6F4BDBF12D8DFCBD00F029CB /* ReownWalletKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4BDBF02D8DFCBD00F029CB /* ReownWalletKit */; };
+		6F4BDBF32D8DFCBD00F029CB /* WalletConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4BDBF22D8DFCBD00F029CB /* WalletConnect */; };
+		6F4BDBF52D8DFCBD00F029CB /* WalletConnectIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4BDBF42D8DFCBD00F029CB /* WalletConnectIdentity */; };
+		6F4BDBF72D8DFCBD00F029CB /* WalletConnectPairing in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4BDBF62D8DFCBD00F029CB /* WalletConnectPairing */; };
+		6F4BDBF92D8E03AC00F029CB /* WalletConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BDBF82D8E03AC00F029CB /* WalletConnectView.swift */; };
 		6F7DDEF02D883B6E00F2107D /* BlockchainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DDEEF2D883B6E00F2107D /* BlockchainManager.swift */; };
 		6F7DDEF22D883E4400F2107D /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DDEF12D883E4400F2107D /* WalletManager.swift */; };
 		6F7DDF092D883F2900F2107D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7DDF082D883F2900F2107D /* ContentView.swift */; };
@@ -24,6 +32,7 @@
 		6F331AA72D369DFF0014C1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F331AAA2D369DFF0014C1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F331AAC2D369DFF0014C1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F4BDBF82D8E03AC00F029CB /* WalletConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectView.swift; sourceTree = "<group>"; };
 		6F7DDEEF2D883B6E00F2107D /* BlockchainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainManager.swift; sourceTree = "<group>"; };
 		6F7DDEF12D883E4400F2107D /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
 		6F7DDF082D883F2900F2107D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +43,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F4BDBEB2D8DFCBD00F029CB /* ReownAppKit in Frameworks */,
+				6F4BDBF32D8DFCBD00F029CB /* WalletConnect in Frameworks */,
+				6F4BDBED2D8DFCBD00F029CB /* ReownAppKitUI in Frameworks */,
+				6F4BDBF12D8DFCBD00F029CB /* ReownWalletKit in Frameworks */,
+				6F4BDBF52D8DFCBD00F029CB /* WalletConnectIdentity in Frameworks */,
+				6F4BDBF72D8DFCBD00F029CB /* WalletConnectPairing in Frameworks */,
+				6F4BDBEF2D8DFCBD00F029CB /* ReownRouter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +83,7 @@
 				6F7DDEEF2D883B6E00F2107D /* BlockchainManager.swift */,
 				6F7DDEF12D883E4400F2107D /* WalletManager.swift */,
 				6F7DDF082D883F2900F2107D /* ContentView.swift */,
+				6F4BDBF82D8E03AC00F029CB /* WalletConnectView.swift */,
 				6F331AA22D369DF80014C1F6 /* ViewController.swift */,
 				6F331AA42D369DF80014C1F6 /* Main.storyboard */,
 				6F331AA72D369DFF0014C1F6 /* Assets.xcassets */,
@@ -113,6 +130,13 @@
 			);
 			name = bicredit;
 			packageProductDependencies = (
+				6F4BDBEA2D8DFCBD00F029CB /* ReownAppKit */,
+				6F4BDBEC2D8DFCBD00F029CB /* ReownAppKitUI */,
+				6F4BDBEE2D8DFCBD00F029CB /* ReownRouter */,
+				6F4BDBF02D8DFCBD00F029CB /* ReownWalletKit */,
+				6F4BDBF22D8DFCBD00F029CB /* WalletConnect */,
+				6F4BDBF42D8DFCBD00F029CB /* WalletConnectIdentity */,
+				6F4BDBF62D8DFCBD00F029CB /* WalletConnectPairing */,
 			);
 			productName = bicredit;
 			productReference = 6F331A9B2D369DF80014C1F6 /* bicredit.app */;
@@ -143,6 +167,7 @@
 			);
 			mainGroup = 6F331A922D369DF80014C1F6;
 			packageReferences = (
+				6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */,
 			);
 			productRefGroup = 6F331A9C2D369DF80014C1F6 /* Products */;
 			projectDirPath = "";
@@ -164,6 +189,7 @@
 				6F331A9F2D369DF80014C1F6 /* AppDelegate.swift in Sources */,
 				6F331AA12D369DF80014C1F6 /* SceneDelegate.swift in Sources */,
 				6F7DDEF02D883B6E00F2107D /* BlockchainManager.swift in Sources */,
+				6F4BDBF92D8E03AC00F029CB /* WalletConnectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +407,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/reown-com/reown-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F4BDBEA2D8DFCBD00F029CB /* ReownAppKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */;
+			productName = ReownAppKit;
+		};
+		6F4BDBEC2D8DFCBD00F029CB /* ReownAppKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */;
+			productName = ReownAppKitUI;
+		};
+		6F4BDBEE2D8DFCBD00F029CB /* ReownRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */;
+			productName = ReownRouter;
+		};
+		6F4BDBF02D8DFCBD00F029CB /* ReownWalletKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */;
+			productName = ReownWalletKit;
+		};
+		6F4BDBF22D8DFCBD00F029CB /* WalletConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */;
+			productName = WalletConnect;
+		};
+		6F4BDBF42D8DFCBD00F029CB /* WalletConnectIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */;
+			productName = WalletConnectIdentity;
+		};
+		6F4BDBF62D8DFCBD00F029CB /* WalletConnectPairing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F4BDBE92D8DFCBC00F029CB /* XCRemoteSwiftPackageReference "reown-swift" */;
+			productName = WalletConnectPairing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F331A932D369DF80014C1F6 /* Project object */;
 }
